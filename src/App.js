@@ -1,15 +1,12 @@
 import React from 'react'
-import { createBrowserRouter } from 'react-router-dom'
+import {RouterProvider } from 'react-router-dom'
 
-const router = createBrowserRouter([{
-  
-}])
+import { router } from './utils/Routes'
+
 
 function App() {
   return (
-    <div className='flex min-h-screen justify-center items-center'>
-      <h1 className='text-5xl'>Welcome to Smart Home Starter Template</h1>
-    </div>
+   <RouterProvider router={router} />
   )
 }
 
